@@ -1,0 +1,10 @@
+body{
+    background-color: silver;
+    color: darkslategrey;
+}
+form{
+    width: 450px;
+    border: 4px solid white;
+    background-color: silver;
+    padding: 30px;
+  }

@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>Speech to text conversion using JavaScript</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <h1>Text 2 Speech</h1>
+  <ul>
+    <li>Enter some text in the input below and press return to hear it. </li>
+    <li>Change voices using the dropdown menu.</li>
+    <li>Rate slider: adjust speed</li>
+    <li>Pitch slider: adjust voice pitch</li>
+  </ul>
+  <form>
+    <div>
+
+      <p>Hoeveel teksten?<input id="hoeveelTekstinput" type="number" id="quantity" name="quantity" min="1" max="100" value="1"></p>
+      <ul id="tekstInputs">
+      </ul>
+    </div>
+    <div>
+      <label for="rate">Rate</label>
+      <span class="rate-value">1</span>
+      <input type="range" min="0.5" max="2" value="1" step="0.1" id="rate">
+    </div>
+    <div>
+      <label for="pitch">Pitch</label>
+      <span class="pitch-value">1</span>
+      <input type="range" min="0" max="2" value="1" step="0.1" id="pitch">
+    </div>
+    <select></select>
+    <div>
+      <br>
+      <input type="button" id="play" value="Play from input 1">
+      <input type="button" id="play2" value="Play all!">
+      <input type="button" id="play3" value="Play all from array!">
+      <input type="button" id="pause" value="Pause">
+      <input type="button" id="resume" value="Resume">
+    </div>
+  </form>
+ 
+  <script src="speechSynth.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>
